@@ -1,0 +1,27 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.example.springbootdemo.pojo.Persion",
+      "name": "persion",
+      "type": "com.example.springbootdemo.pojo.Persion"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.example.springbootdemo.pojo.Persion",
+      "name": "persion.bool",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.example.springbootdemo.pojo.Persion",
+      "name": "persion.id",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.example.springbootdemo.pojo.Persion",
+      "name": "persion.name",
+      "type": "java.lang.String"
+    }
+  ]
+}

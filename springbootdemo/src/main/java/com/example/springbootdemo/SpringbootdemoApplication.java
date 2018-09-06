@@ -1,13 +1,16 @@
 package com.example.springbootdemo;
-
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
-@ComponentScan(value = "com.example.springbootdemo")
+@ComponentScan(basePackages = "com.example.springbootdemo")
+@EnableAutoConfiguration
+@ImportResource(locations = {"classpath:hello.xml"})
 public class SpringbootdemoApplication {
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootdemoApplication.class, args);

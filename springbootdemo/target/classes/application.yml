@@ -1,0 +1,9 @@
+
+persion:
+   name: wukn
+   id: 26
+   bool: false
+   list:
+     - a
+     - b
+
