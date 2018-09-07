@@ -8,6 +8,8 @@ import com.example.springbootdemo.pojo.Persion;
 import com.example.springbootdemo.pojo.User;
 import com.example.springbootdemo.response.BaseResponse;
 import com.example.springbootdemo.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.validation.BindingResult;
@@ -48,7 +50,7 @@ public class UserController {
     @Autowired
     private HelloWord helloWord;
 
-
+    Logger logger = LoggerFactory.getLogger( HelloWord.class );
 
 
     /**
@@ -70,10 +72,6 @@ public class UserController {
         }
 
     }
-
-
-
-
 
 
 

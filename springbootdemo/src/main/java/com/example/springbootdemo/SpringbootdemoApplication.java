@@ -6,11 +6,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.example.springbootdemo")
+@ComponentScan(basePackages = "com.example.springbootdemo",excludeFilters = {})
 @EnableAutoConfiguration
 @ImportResource(locations = {"classpath:hello.xml"})
 public class SpringbootdemoApplication {
-
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootdemoApplication.class, args);
