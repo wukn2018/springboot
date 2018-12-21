@@ -64,6 +64,7 @@ public class UserController {
             throws Exception{
         try {
             System.out.println(s);
+            logger.info("dddd");
             System.out.println(persion);
             helloWord.test0();
             return new ClientResult( userService.finaUserByNAME( user.getName(),user.getSex() ) );
